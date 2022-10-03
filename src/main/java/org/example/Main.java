@@ -10,11 +10,15 @@ public class Main {
         String name=sc.next();
         System.out.println("Please enter Your surname: ");
         String surname=sc.next();
+        int select;
 
         Account user1=new Account(name, surname);
 
-        System.out.println("What do You want to do?\n1. Account details\n2. Deposit\n3. Withdraw");
-        int select=sc.nextInt();
+
+        do {
+            System.out.println("What do You want to do?\n1. Account details\n2. Deposit\n3. Withdraw\n4. Exit");
+            select=sc.nextInt();
+
         switch(select){
             case 1:
                 System.out.println("User details");
@@ -38,8 +42,10 @@ public class Main {
                 else {
                     System.out.println("We can't do this operation, your account balance is lower than amount You want to withdraw.");
                 }
-
                 break;
+            case 4:
+                System.out.println("Exit program.");
         }
     }
-}
+        while (select!=4);
+}}
