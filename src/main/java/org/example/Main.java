@@ -18,6 +18,7 @@ public class Main {
         switch(select){
             case 1:
                 System.out.println("User details");
+                System.out.println(user1.details());
                 break;
             case 2:
                 System.out.println("Deposit money");
