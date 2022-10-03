@@ -22,6 +22,10 @@ public class Main {
                 break;
             case 2:
                 System.out.println("Deposit money");
+                System.out.println("How much money do You want to deposit?");
+                int deposit=sc.nextInt();
+                user1.deposit(deposit);
+                System.out.println("Your current balance is: " + user1.getBalance());
                 break;
             case 3:
                 System.out.println("Withdraw");
