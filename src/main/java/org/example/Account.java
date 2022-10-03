@@ -17,16 +17,16 @@ public class Account {
         return details;
 
     }
-    public void deposit(int cashToDeposit){
-        this.balance=balance + cashToDeposit;
+    public void deposit(int deposit){
+        this.balance=balance + deposit;
     }
 
     public float getBalance(){
         return balance;
     }
 
-    public void withdraw(int cashToWithdraw){
-        this.balance=balance - cashToWithdraw;
+    public void withdraw(int withdraw){
+        this.balance=balance - withdraw;
 
     }
 
