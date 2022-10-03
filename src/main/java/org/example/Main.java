@@ -29,6 +29,10 @@ public class Main {
                 break;
             case 3:
                 System.out.println("Withdraw");
+                System.out.println("How much money do You want to withdraw?");
+                int withdraw=sc.nextInt();
+                user1.withdraw(withdraw);
+                System.out.println("Your current balance is: " + user1.getBalance());
                 break;
         }
     }
